@@ -65,12 +65,20 @@ void GAME_update()
     //---- 三角形を描画
     glBegin(GL_TRIANGLES);
 
+    
     glColor3ub(255, 0, 0);
     glVertex2f(0.0f, 0.0f);
     glColor3ub(0, 255, 0);
     glVertex2f(1.0f, 0.0f);
     glColor3ub(0, 0, 255);
     glVertex2f(1.0f, 1.0f);
+
+    glColor3ub(255, 0, 0);
+    glVertex2f(-0.0f, -0.5f);
+    glColor3ub(0, 255, 0);
+    glVertex2f(0.0f, -1.0f);
+    glColor3ub(0, 0, 255);
+    glVertex2f(-0.5f, -1.0f);
 
     glEnd();
 }
