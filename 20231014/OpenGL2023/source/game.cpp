@@ -71,6 +71,7 @@ void GAME_update()
     static constexpr float PI = std::numbers::pi_v<float>;
 
    constexpr int DIV_COUNT = 32; //readonly
+    //glBegin(GL_POLYGON);
     glBegin(GL_LINES);
     {
        
