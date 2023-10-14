@@ -25,7 +25,6 @@ bool GAME_setup()
     return true;
 }
 
-double test = 0;
 //---------------------------------------------------------------------------
 //	更新
 //---------------------------------------------------------------------------
@@ -74,8 +73,7 @@ void GAME_update()
    constexpr int DIV_COUNT = 32; //readonly
     glBegin(GL_LINES);
     {
-        int x = 0.1;
-        int y = 0.1;
+       
             glColor3ub(255, 255, 255);
         for(int i = 0; i < DIV_COUNT; i++) {
            // float angle0 = static_cast<float>(i) /DIV_COUNT; 
@@ -103,8 +101,6 @@ void GAME_update()
 
 
     glEnd();
-
-    test++;
 }
 
 //---------------------------------------------------------------------------
